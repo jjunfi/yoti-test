@@ -1,0 +1,603 @@
+{
+	"id": "103709ba-3600-bb75-265a-ca7630defd4b",
+	"name": "Junhee_yoti",
+	"description": "Tests to check the update functionality",
+	"order": [],
+	"folders": [
+		{
+			"id": "124012b2-ec84-8d31-0af1-653c234a334d",
+			"name": "200",
+			"description": "",
+			"order": [
+				"86cb73b1-6575-36fd-72cc-ce276486132f",
+				"490eb7a1-179c-fd8a-fdc5-851464667670"
+			],
+			"owner": "595452"
+		},
+		{
+			"id": "3a8a8cc5-1c75-0baa-ce5b-618d474880c2",
+			"name": "400",
+			"description": "Test cases for 400 responses",
+			"order": [
+				"56f71a2a-b8d6-99cb-b50c-3b489d84c721",
+				"c035afda-7a23-851b-458d-e5efad8d9c9f",
+				"3a930357-c0a1-5b15-99ef-eb344e7ee58b",
+				"6a6d2069-ee51-84f4-4402-68082528f07f",
+				"1839764d-899e-46fe-66ab-fa9f7150b0bb",
+				"14513d21-9e00-7105-2de3-122f9a41b9cc",
+				"792b0136-ef0b-2f6e-fd9e-019afc628808",
+				"679d1bb6-e11e-f6a3-7103-cdeb5e45d254",
+				"0b22f757-1589-0292-2332-3fadb5ea5855",
+				"df0218bc-449f-d1bd-f0cb-9f4d94280e71",
+				"7955ca05-aa6b-a89c-1d4b-2dfcb21a582b",
+				"524f6442-9c43-73ed-d76c-597d9f498af4"
+			],
+			"owner": "595452"
+		},
+		{
+			"id": "d014b1a3-118a-1296-8105-b95ca768fdeb",
+			"name": "403",
+			"description": "Test cases for 403 responses",
+			"order": [
+				"497a9d7e-45de-1245-c4df-34b78c19b461",
+				"5343d8df-5b74-f2e5-94b4-f9616c07da1d",
+				"844ffb0e-f8bc-997e-2e33-658b36dc4f87",
+				"c4babe79-7c96-19d4-96af-5ce3507d66ba"
+			],
+			"owner": "595452"
+		},
+		{
+			"id": "293200ee-3b4b-b779-6d2d-5e8ac6eb060c",
+			"name": "404",
+			"description": "Test cases for 404 responses",
+			"order": [
+				"65eee7d9-bc11-3954-30f4-3ca8d00d5065",
+				"671fce39-39ac-4aa1-9386-51aab20c57ef"
+			],
+			"owner": "595452"
+		}
+	],
+	"timestamp": 1464431787486,
+	"owner": "595452",
+	"remoteLink": "https://www.getpostman.com/collections/df008117b6d2b050a225",
+	"public": false,
+	"requests": [
+		{
+			"id": "0b22f757-1589-0292-2332-3fadb5ea5855",
+			"headers": "",
+			"url": "http://sample-test-jun.com/apps/:1234",
+			"preRequestScript": "",
+			"pathVariables": {
+				"1234": ""
+			},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "try {\n    tests[\"Status code is 400\"] = responseCode.code === 400;\n}\ncatch (e) { }\n\n\n\n\n\n\n",
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "testuser1",
+				"password": "password",
+				"saveToRequest": true
+			},
+			"time": 1464446433630,
+			"name": "400 duplicate fields - name",
+			"description": "",
+			"collectionId": "103709ba-3600-bb75-265a-ca7630defd4b",
+			"responses": [],
+			"rawModeData": "{\r\n\t“name” : “MyApp”,\r\n\t“name” : “YourApp”,\r\n    “domain” : “https://my.domain.com”,\r\n    “permissions” : [\r\n\t    “A”,\r\n\t    \"B\",\r\n\t    “C”\r\n    ]\r\n}\r\n"
+		},
+		{
+			"id": "14513d21-9e00-7105-2de3-122f9a41b9cc",
+			"headers": "",
+			"url": "http://sample-test-jun.com/apps/:1234",
+			"preRequestScript": "",
+			"pathVariables": {
+				"1234": ""
+			},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "try {\n    tests[\"Status code is 400\"] = responseCode.code === 400;\n}\ncatch (e) { }\n\n\n\n\n\n\n",
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "testuser1",
+				"password": "password",
+				"saveToRequest": true
+			},
+			"time": 1464446385863,
+			"name": "400 field name typo- domain",
+			"description": "",
+			"collectionId": "103709ba-3600-bb75-265a-ca7630defd4b",
+			"responses": [],
+			"rawModeData": "{\r\n\t“name” : “MyApp”,\r\n    “domainnnn” : “https://my.domain.com”,\r\n    “permissions” : [\r\n\t    “A”,\r\n\t    \"B\",\r\n\t    “C”\r\n    ]\r\n}\r\n"
+		},
+		{
+			"id": "1839764d-899e-46fe-66ab-fa9f7150b0bb",
+			"headers": "",
+			"url": "http://sample-test-jun.com/apps/:1234",
+			"preRequestScript": "",
+			"pathVariables": {
+				"1234": ""
+			},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "try {\n    tests[\"Status code is 400\"] = responseCode.code === 400;\n}\ncatch (e) { }\n\n\n\n\n\n\n",
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "testuser1",
+				"password": "password",
+				"saveToRequest": true
+			},
+			"time": 1464446381138,
+			"name": "400 field name typo- name",
+			"description": "",
+			"collectionId": "103709ba-3600-bb75-265a-ca7630defd4b",
+			"responses": [],
+			"rawModeData": "{\r\n\t“nameee” : “MyApp”,\r\n    “domain” : “https://my.domain.com”,\r\n    “permissions” : [\r\n\t    “A”,\r\n\t    \"B\",\r\n\t    “C”\r\n    ]\r\n}\r\n"
+		},
+		{
+			"id": "3a930357-c0a1-5b15-99ef-eb344e7ee58b",
+			"headers": "",
+			"url": "http://sample-test-jun.com/apps/:1234",
+			"preRequestScript": "",
+			"pathVariables": {
+				"1234": ""
+			},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "try {\n    tests[\"Status code is 400\"] = responseCode.code === 400;\n}\ncatch (e) { }\n\n\n\n\n\n\n",
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "testuser1",
+				"password": "password",
+				"saveToRequest": true
+			},
+			"time": 1464446371446,
+			"name": "400 missing field- permissions",
+			"description": "",
+			"collectionId": "103709ba-3600-bb75-265a-ca7630defd4b",
+			"responses": [],
+			"rawModeData": "{\r\n\t“name” : “MyApp”,\r\n    “domain” : “https://my.domain.com”,\r\n\r\n}\r\n"
+		},
+		{
+			"id": "490eb7a1-179c-fd8a-fdc5-851464667670",
+			"headers": "",
+			"url": "http://sample-test-jun.com/apps/:1234",
+			"pathVariables": {
+				"1234": ""
+			},
+			"preRequestScript": "",
+			"method": "PUT",
+			"collectionId": "103709ba-3600-bb75-265a-ca7630defd4b",
+			"data": [],
+			"dataMode": "raw",
+			"name": "200 Same permission",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1464440374982,
+			"version": 2,
+			"responses": [],
+			"tests": "try {\n    tests[\"Status code is 200\"] = responseCode.code === 200;\n}\ncatch (e) { }\n\n\n\n\n\n\n",
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "testuser1",
+				"password": "password",
+				"saveToRequest": true
+			},
+			"folder": "124012b2-ec84-8d31-0af1-653c234a334d",
+			"rawModeData": "{\r\n\t“name” : “MyApp”,\r\n    “domain” : “https://my.domain.com”,\r\n    “permissions” : [\r\n\t    “A”,\r\n\t    \"B\",\r\n\t    “C”\r\n    ]\r\n}\r\n"
+		},
+		{
+			"id": "497a9d7e-45de-1245-c4df-34b78c19b461",
+			"headers": "",
+			"url": "http://sample-test-jun.com/apps/:1234",
+			"preRequestScript": "",
+			"pathVariables": {
+				"1234": ""
+			},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "try {\n    tests[\"Status code is 403\"] = responseCode.code === 403;\n}\ncatch (e) { }\n\n\n\n\n\n\n",
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "testuser1",
+				"password": "incorrect",
+				"saveToRequest": true
+			},
+			"time": 1464446250614,
+			"name": "403 incorrect authentication",
+			"description": "",
+			"collectionId": "103709ba-3600-bb75-265a-ca7630defd4b",
+			"responses": [],
+			"rawModeData": "{\r\n\t“name” : “MyApp”,\r\n    “domain” : “https://my.domain.com”,\r\n    “permissions” : [\r\n\t    “A”,\r\n\t    \"B\",\r\n\t    “C”\r\n    ]\r\n}\r\n"
+		},
+		{
+			"id": "524f6442-9c43-73ed-d76c-597d9f498af4",
+			"headers": "",
+			"url": "http://sample-test-jun.com/apps/:1234",
+			"preRequestScript": "",
+			"pathVariables": {
+				"1234": ""
+			},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "try {\n    tests[\"Status code is 400\"] = responseCode.code === 400;\n}\ncatch (e) { }\n\n\n\n\n\n\n",
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "testuser1",
+				"password": "password",
+				"saveToRequest": true
+			},
+			"time": 1464446497287,
+			"name": "400 additional fields",
+			"description": "",
+			"collectionId": "103709ba-3600-bb75-265a-ca7630defd4b",
+			"responses": [],
+			"rawModeData": "{\r\n\t“name” : “MyApp”,\r\n    “domain” : “https://my.domain.com”,\r\n    “permissions” : [\r\n\t    “A”,\r\n\t    \"B\",\r\n\t    “C”\r\n    ],\r\n    \"extraField\" : \"Dummydata\",\r\n    \"anotherfield\" \"Moredata\"\r\n}\r\n"
+		},
+		{
+			"id": "5343d8df-5b74-f2e5-94b4-f9616c07da1d",
+			"headers": "",
+			"url": "http://sample-test-jun.com/apps/:1234",
+			"preRequestScript": "",
+			"pathVariables": {
+				"1234": ""
+			},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "try {\n    tests[\"Status code is 403\"] = responseCode.code === 403;\n}\ncatch (e) { }\n\n\n\n\n\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1464446240657,
+			"name": "403 no authentication",
+			"description": "",
+			"collectionId": "103709ba-3600-bb75-265a-ca7630defd4b",
+			"responses": [],
+			"rawModeData": "{\r\n\t“name” : “MyApp”,\r\n    “domain” : “https://my.domain.com”,\r\n    “permissions” : [\r\n\t    “A”,\r\n\t    \"B\",\r\n\t    “C”\r\n    ]\r\n}\r\n"
+		},
+		{
+			"id": "56f71a2a-b8d6-99cb-b50c-3b489d84c721",
+			"headers": "",
+			"url": "http://sample-test-jun.com/apps/:1234",
+			"preRequestScript": "",
+			"pathVariables": {
+				"1234": ""
+			},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "try {\n    tests[\"Status code is 400\"] = responseCode.code === 400;\n}\ncatch (e) { }\n\n\n\n\n\n\n",
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "testuser1",
+				"password": "password",
+				"saveToRequest": true
+			},
+			"time": 1464446361212,
+			"name": "400 missing field- name",
+			"description": "",
+			"collectionId": "103709ba-3600-bb75-265a-ca7630defd4b",
+			"responses": [],
+			"rawModeData": "{\r\n    “domain” : “https://my.domain.com”,\r\n    “permissions” : [\r\n\t    “A”,\r\n\t    \"B\",\r\n\t    “C”\r\n    ]\r\n}\r\n"
+		},
+		{
+			"id": "65eee7d9-bc11-3954-30f4-3ca8d00d5065",
+			"headers": "",
+			"url": "http://sample-test-jun.com/apps/:1234",
+			"preRequestScript": "",
+			"pathVariables": {
+				"1234": ""
+			},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "try {\n    tests[\"Status code is 404\"] = responseCode.code === 404;\n}\ncatch (e) { }\n\n\n\n\n\n\n",
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "testuser1",
+				"password": "password",
+				"saveToRequest": true
+			},
+			"time": 1464446041448,
+			"name": "404 valid payload",
+			"description": "",
+			"collectionId": "103709ba-3600-bb75-265a-ca7630defd4b",
+			"responses": [],
+			"rawModeData": "{\r\n\t“name” : “MyApp”,\r\n    “domain” : “https://my.domain.com”,\r\n    “permissions” : [\r\n\t    “A”,\r\n\t    \"B\",\r\n\t    “C”\r\n    ]\r\n}\r\n"
+		},
+		{
+			"id": "671fce39-39ac-4aa1-9386-51aab20c57ef",
+			"headers": "",
+			"url": "http://sample-test-jun.com/apps/:1234",
+			"preRequestScript": "",
+			"pathVariables": {
+				"1234": ""
+			},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "try {\n    tests[\"Status code is 404\"] = responseCode.code === 404;\n}\ncatch (e) { }\n\n\n\n\n\n\n",
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "testuser1",
+				"password": "password",
+				"saveToRequest": true
+			},
+			"time": 1464446104803,
+			"name": "404 invalid payload",
+			"description": "",
+			"collectionId": "103709ba-3600-bb75-265a-ca7630defd4b",
+			"responses": [],
+			"rawModeData": "{\r\n\t“name” : “MyApp”,\r\n    “permissions” : [\r\n\t    “A”,\r\n\t    \"B\",\r\n\t    “C”\r\n    ]\r\n}\r\n"
+		},
+		{
+			"id": "679d1bb6-e11e-f6a3-7103-cdeb5e45d254",
+			"headers": "",
+			"url": "http://sample-test-jun.com/apps/:1234",
+			"preRequestScript": "",
+			"pathVariables": {
+				"1234": ""
+			},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "try {\n    tests[\"Status code is 400\"] = responseCode.code === 400;\n}\ncatch (e) { }\n\n\n\n\n\n\n",
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "testuser1",
+				"password": "password",
+				"saveToRequest": true
+			},
+			"time": 1464446417445,
+			"name": "400 field name typo- all",
+			"description": "",
+			"collectionId": "103709ba-3600-bb75-265a-ca7630defd4b",
+			"responses": [],
+			"rawModeData": "{\r\n\t“dname” : “MyApp”,\r\n    “domaihn” : “https://my.domain.com”,\r\n    “permisssions” : [\r\n\t    “A”,\r\n\t    \"B\",\r\n\t    “C”\r\n    ]\r\n}\r\n"
+		},
+		{
+			"id": "6a6d2069-ee51-84f4-4402-68082528f07f",
+			"headers": "",
+			"url": "http://sample-test-jun.com/apps/:1234",
+			"preRequestScript": "",
+			"pathVariables": {
+				"1234": ""
+			},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "try {\n    tests[\"Status code is 400\"] = responseCode.code === 400;\n}\ncatch (e) { }\n\n\n\n\n\n\n",
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "testuser1",
+				"password": "password",
+				"saveToRequest": true
+			},
+			"time": 1464446375709,
+			"name": "400 missing field- all",
+			"description": "",
+			"collectionId": "103709ba-3600-bb75-265a-ca7630defd4b",
+			"responses": [],
+			"rawModeData": "{\r\n\r\n}\r\n"
+		},
+		{
+			"id": "792b0136-ef0b-2f6e-fd9e-019afc628808",
+			"headers": "",
+			"url": "http://sample-test-jun.com/apps/:1234",
+			"preRequestScript": "",
+			"pathVariables": {
+				"1234": ""
+			},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "try {\n    tests[\"Status code is 400\"] = responseCode.code === 400;\n}\ncatch (e) { }\n\n\n\n\n\n\n",
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "testuser1",
+				"password": "password",
+				"saveToRequest": true
+			},
+			"time": 1464446548706,
+			"name": "400 field name typo- permissions",
+			"description": "",
+			"collectionId": "103709ba-3600-bb75-265a-ca7630defd4b",
+			"responses": [],
+			"rawModeData": "{\r\n\t“name” : “MyApp”,\r\n    “domain” : “https://my.domain.com”,\r\n    “perrmissions” : [\r\n\t    “A”,\r\n\t    \"B\",\r\n\t    “C”\r\n    ]\r\n}\r\n"
+		},
+		{
+			"id": "7955ca05-aa6b-a89c-1d4b-2dfcb21a582b",
+			"headers": "",
+			"url": "http://sample-test-jun.com/apps/:1234",
+			"preRequestScript": "",
+			"pathVariables": {
+				"1234": ""
+			},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "try {\n    tests[\"Status code is 400\"] = responseCode.code === 400;\n}\ncatch (e) { }\n\n\n\n\n\n\n",
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "testuser1",
+				"password": "password",
+				"saveToRequest": true
+			},
+			"time": 1464446463047,
+			"name": "400 duplicate fields - permissions",
+			"description": "",
+			"collectionId": "103709ba-3600-bb75-265a-ca7630defd4b",
+			"responses": [],
+			"rawModeData": "{\r\n\t“name” : “MyApp”,\r\n    “domain” : “https://my.domain.com”,\r\n    “permissions” : [\r\n\t    “A”,\r\n\t    \"B\",\r\n\t    “C”\r\n    ]\r\n    “permissions” : [\r\n\t    “A”,\r\n\t    \"B\",\r\n    ]\r\n}\r\n"
+		},
+		{
+			"id": "844ffb0e-f8bc-997e-2e33-658b36dc4f87",
+			"headers": "",
+			"url": "http://sample-test-jun.com/apps/:1234",
+			"preRequestScript": "",
+			"pathVariables": {
+				"1234": ""
+			},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "try {\n    tests[\"Status code is 403\"] = responseCode.code === 403;\n}\ncatch (e) { }\n\n\n\n\n\n\n",
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "wronguser1",
+				"password": "wrongpassword1",
+				"saveToRequest": true
+			},
+			"time": 1464446539070,
+			"name": "403 incorrect user",
+			"description": "",
+			"collectionId": "103709ba-3600-bb75-265a-ca7630defd4b",
+			"responses": [],
+			"rawModeData": "{\r\n\t“name” : “MyApp”,\r\n    “domain” : “https://my.domain.com”,\r\n    “permissions” : [\r\n\t    “A”,\r\n\t    \"B\",\r\n\t    “C”\r\n    ]\r\n}\r\n"
+		},
+		{
+			"id": "86cb73b1-6575-36fd-72cc-ce276486132f",
+			"headers": "",
+			"url": "http://sample-test-jun.com/apps/:1234",
+			"preRequestScript": "",
+			"pathVariables": {
+				"1234": ""
+			},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "try {\n    tests[\"Status code is 200\"] = responseCode.code === 200;\n}\ncatch (e) { }\n\n\n\n\n\n\n",
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "testuser1",
+				"password": "password",
+				"saveToRequest": true
+			},
+			"time": 1464440395467,
+			"name": "200 Vanilla",
+			"description": "",
+			"collectionId": "103709ba-3600-bb75-265a-ca7630defd4b",
+			"responses": [],
+			"rawModeData": "{\r\n\t“name” : “MyApp”,\r\n    “domain” : “https://my.domain.com”,\r\n    “permissions” : [\r\n\t    “A”,\r\n\t    “C”\r\n    ]\r\n}\r\n",
+			"folder": "124012b2-ec84-8d31-0af1-653c234a334d"
+		},
+		{
+			"id": "c035afda-7a23-851b-458d-e5efad8d9c9f",
+			"headers": "",
+			"url": "http://sample-test-jun.com/apps/:1234",
+			"preRequestScript": "",
+			"pathVariables": {
+				"1234": ""
+			},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "try {\n    tests[\"Status code is 400\"] = responseCode.code === 400;\n}\ncatch (e) { }\n\n\n\n\n\n\n",
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "testuser1",
+				"password": "password",
+				"saveToRequest": true
+			},
+			"time": 1464446367056,
+			"name": "400 missing field- domain",
+			"description": "",
+			"collectionId": "103709ba-3600-bb75-265a-ca7630defd4b",
+			"responses": [],
+			"rawModeData": "{\r\n\t“name” : “MyApp”,\r\n    “permissions” : [\r\n\t    “A”,\r\n\t    \"B\",\r\n\t    “C”\r\n    ]\r\n}\r\n"
+		},
+		{
+			"id": "c4babe79-7c96-19d4-96af-5ce3507d66ba",
+			"headers": "",
+			"url": "http://sample-test-jun.com/apps/:1234",
+			"preRequestScript": "",
+			"pathVariables": {
+				"1234": ""
+			},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "try {\n    tests[\"Status code is 403\"] = responseCode.code === 403;\n}\ncatch (e) { }\n\n\n\n\n\n\n",
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "testuser1",
+				"password": "password",
+				"saveToRequest": true
+			},
+			"time": 1464446208239,
+			"name": "403 updating incorrect field",
+			"description": "",
+			"collectionId": "103709ba-3600-bb75-265a-ca7630defd4b",
+			"responses": [],
+			"rawModeData": "{\r\n\t“name” : “NewName”,\r\n    “domain” : “https://my.updateddomain.com”,\r\n    “permissions” : [\r\n\t    “A”,\r\n\t    \"B\",\r\n\t    “C”\r\n    ]\r\n}\r\n"
+		},
+		{
+			"id": "df0218bc-449f-d1bd-f0cb-9f4d94280e71",
+			"headers": "",
+			"url": "http://sample-test-jun.com/apps/:1234",
+			"preRequestScript": "",
+			"pathVariables": {
+				"1234": ""
+			},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "try {\n    tests[\"Status code is 400\"] = responseCode.code === 400;\n}\ncatch (e) { }\n\n\n\n\n\n\n",
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "testuser1",
+				"password": "password",
+				"saveToRequest": true
+			},
+			"time": 1464446446007,
+			"name": "400 duplicate fields - domain",
+			"description": "",
+			"collectionId": "103709ba-3600-bb75-265a-ca7630defd4b",
+			"responses": [],
+			"rawModeData": "{\r\n\t“name” : “MyApp”,\r\n    “domain” : “https://my.domain.com”,\r\n    “domain” : “https://your.domain.com”,\r\n    “permissions” : [\r\n\t    “A”,\r\n\t    \"B\",\r\n\t    “C”\r\n    ]\r\n}\r\n"
+		}
+	]
+}
